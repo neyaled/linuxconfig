@@ -1,0 +1,6 @@
+"\C-x\C-s": "sudo "
+#"\e[A":history-beginning-search-backward
+"\e[A":history-search-backward
+#"\e[B":history-beginning-search-forward
+"\e[B":history-search-forward
+set show-all-if-ambiguous on

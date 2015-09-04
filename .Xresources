@@ -1,0 +1,50 @@
+URxvt*.depth: 32
+URxvt*.background: [95]#000000
+URxvt*.foreground: [95]#FFFFFF
+URxvt*.urgentOnBell: true
+*.URxvt.urgentOnBell: true
+x-terminal-emulatorurgentOnBell: true
+
+URxvt*jumpScroll:           False
+URxvt*scrollBar:            False
+URxvt*scrollWithBuffer:     True
+URxvt*scrollTtyOutput:      True
+URxvt*scrollTtyKeypress:    True
+URxvt*saveLines:            1000000
+
+! URxvt*.letterSpace: -3
+
+!Xft.autohint: 0
+!Xft.lcdfilter:  lcddefault
+!Xft.hintstyle:  hintfull
+!Xft.hinting: 1
+!Xft.antialias: 1
+!Xft.rgba: rgb
+
+URxvt*perl-ext-common: default,matcher,vtwheel,keyboard-select
+
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
+URxvt.keysym.M-f: perl:matcher:list
+URxvt.keysym.M-q: perl:matcher:last
+
+URxvt.matcher.pattern.2: BZ:?\\s+(\\d+) 
+URxvt.matcher.launcher.2: firefox match
+URxvt.matcher.rend.2: Uline fg5
+
+URxvt.matcher.pattern.3: \\bChange-Id:\\s+(I[\\da-f]\{40\}) 
+URxvt.matcher.launcher.3: firefox match
+URxvt.matcher.rend.3: Uline fg6
+
+URxvt.matcher.pattern.4: \\bUTP-Id:?\\s+(SMS\\d+)
+URxvt.matcher.launcher.4: firefox matcher
+!URxvt.matcher.rend.4: Uline fg5
+
+URxvt.matcher.pattern.5: \\bwrote\\s(file.*)
+URxvt.matcher.launcher.5: chromium-browser $1
+URxvt.matcher.rend.5: Uline fg4
+
+URxvt.matcher.pattern.7: \\b([^ ]*\.html$)
+URxvt.matcher.launcher.7: chromium-browser $1
+URxvt.matcher.rend.7: Uline fg4
+

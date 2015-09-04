@@ -1,0 +1,11 @@
+[user]
+        name = name
+        email = mail
+[color]
+        ui = auto
+
+[alias]
+    lg="log --decorate --stat --graph"
+
+[merge]
+	tool = vimdiff
