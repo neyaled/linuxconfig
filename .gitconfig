@@ -8,4 +8,7 @@
     lg="log --decorate --stat --graph"
 
 [merge]
-	tool = vimdiff
+    tool = vimdiff
+
+[core]
+	editor = vim
