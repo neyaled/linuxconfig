@@ -1,0 +1,7 @@
+style "mine"
+{
+ font_name = "DejaVu Sans 16"
+}
+widget_class "*" style "mine"
+gtk-font-name="DejaVuSans 16"
+gtk-cursor-theme-size=48

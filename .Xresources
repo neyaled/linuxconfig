@@ -1,3 +1,6 @@
+Xcursor.theme: Adwaita
+Xcursor.size: 32
+
 URxvt*.depth: 32
 URxvt*.background: [95]#000000
 URxvt*.foreground: [95]#FFFFFF

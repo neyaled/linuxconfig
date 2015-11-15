@@ -136,6 +136,8 @@ alias sql2csv="sed \"s/|/;/g\""
 alias kmemleak_read="adb shell cat /d/kmemleak"
 alias kmemleak_scan="adb shell 'echo scan > /d/kmemleak'"
 
+alias vpnenable="/usr/sbin/openvpn --auth-user-pass --config /etc/openvpn/client.conf"
+
 # afuse
 if [ -d ${HOME}/sshfs ] && [ -z "$(pidof afuse)" ]; then
 	pgrep -u ${UID} afuse > /dev/null
