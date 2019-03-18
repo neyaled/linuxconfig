@@ -1,4 +1,4 @@
 #include '~/.gtkrc.mine'
 gtk-cursor-theme-name=Adwaita
-gtk-cursor-theme-size=48
-gtk-font-name="DejaVuSans 14"
+gtk-cursor-theme-size=36
+gtk-font-name="DejaVuSans 10"
